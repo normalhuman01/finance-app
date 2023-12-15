@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+
+    <title>GoGas v1</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css?21">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/aplicacion.css">
+
+    <link rel="icon" href="img/icon.png">
+
+  </head>
+
+  <body class="theme-indigo">
+    
+    <!-- ================ PANELES ================== >
+
+    <!-- Primero, el overlay -->
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    
+    <!-- Right panel -->
+    <div class="panel panel-right panel-cover">
+      <img src="img/fill-1.png">
+    <div class="content-block">
+      
+
+       <h2>El Golf  <span class="badge bg-orange">+ REPSHOP</span></h2>
+      <p class="color-gray">San Isidro</p>
+      <p> Av. General Pezet 1301. Esqu. Av. Coronel Portillo</p>
+      <p>T: 215-7530</p>
+
+       <p><a href="mapa.html" class="panel-close">Ver en mapa</a></p>
+
+      <p><a href="#" class="panel-close">Cerrar</a></p>
+
+    </div>
+  </div>
+ 
+
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+                 
+                    <div class="list-block media-list">
+                      <ul>
+                        <li>
+                          <div class="item-content">
+                            <div class="item-media"><img src="img/128.jpg" width="44"/></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">Luis Lopez</div>
+                              </div>
+                              <div class="item-subtitle"> Disponible: <span class="color-green"> S/.120 </span> </div>
+                               <div class="item-subtitle"> Puntos: <span class="color-green"> 320 </span> </div>
+                            </div>
+                          </div>
+                        </li>
+                       
+                         
+                        </ul>
+                      </div>
+
+              <div class="list-block">
+                <ul>
+                 
+                      
+                        
+
+
+
+                         
+                          
+
+                           <li><a href="estaciones.html" class="item-link close-panel">
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title">Estaciones <span class="badge bg-green">2</span></div>
+                            </div>
+                          </div></a></li>
+
+
+                            <li><a href="misconsumos.html" class="item-link close-panel">
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title">Mis consumos </div>
+                            </div>
+                          </div></a></li>
+
+
+                          <li><a href="micuenta.html" class="item-link close-panel">
+                          <div class="item-content">
+                             
+                            <div class="item-inner">
+                              <div class="item-title">Mi cuenta</div>
+                            </div>
+
+
+                          </div></a></li>
+
+                           <li><a href="catalogo.html" class="item-link close-panel">
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <div class="item-title">Catálogo </div>
+                            </div>
+                          </div></a></li>
+
+
+
+                          <li><a href="configuracion.html" class="item-link close-panel">
+                          <div class="item-content">
+
+                            <div class="item-inner">
+                              <div class="item-title">Configuración</div>
+                            </div>
+
+
+                          </div></a></li>
+
+                       
+                         <li><a href="acercade.html" class="item-link close-panel">
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title">Acerca de</div>
+                          </div>
+                        </div></a></li>
+
+                 
+                </ul>
+              </div> <!-- fin .list-block-->
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+     
+    <!-- ================ VISTAS ================== >
+
+    <!-- Views -->
+    <div class="views">
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                 <div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+                <div class="center">GoGas</div>
+                
+              </div>
+            </div>
+                <a id="boton-plus" href="estaciones.html" class="floating-button color-amber"><i class="icon icon-plus"></i></a>
+            
+                <div class="page-content">
+                 
+                  <div class="content-block-title">Novedades</div>
+
+                  <div class="swiper-container swiper-1">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/sliders/2.jpg"></div>
+                      <div class="swiper-slide"><img src="img/sliders/1.jpg"></div>
+                      
+                      <div class="swiper-slide"><img src="img/sliders/2.jpg"></div>
+                    </div>
+                  </div>
+                
+                  <div class="content-block-title">Mi GoGas</div>
+                    <div class="card">
+                      <div class="card-content"> 
+                        <div class="card-content-inner">
+
+                          <div class="content-block">
+                            <div class="row">
+                              <div class="col-50">
+                                S/.120<br>
+                                <b>Saldo</b>
+
+                              </div>
+                              <div class="col-50">
+                               320<br>
+                               <b>Puntos</b>
+                             </div>
+                           </div>
+                         </div>     
+
+                       </div>                     
+
+                     </div>
+                   </div>
+
+                    <div class="content-block-title">Precios</div>
+                    <div class="card">
+                      <div class="card-content"> 
+                        <div class="card-content-inner">
+                          
+                          <div class="content-block">
+                             <div class="row">
+                              <div class="col-30">Ubicación actual:</div>
+                              <div class="col-30">Region A</div>
+                              
+                            </div>
+                         </div>     
+
+                          <div class="content-block">
+                             <div class="row lista-combustibles" >
+                              <div class="col-25"><span class="circulito">G90</span> <div class="price">S/.12.40</div></div>
+                              <div class="col-25"><span class="circulito">G95</span> <div class="price">S/.15.60</div></div>
+                              <div class="col-25"><span class="circulito">G98</span> <div class="price">S/.16.60</div></div>
+                              <div class="col-25"><span class="circulito">D2</span> <div class="price">S/.16.40</div></div>
+                            </div>
+                         </div>     
+
+                       </div>                     
+
+                     </div>
+                   </div>
+
+
+
+
+
+                 
+                 
+                
+                </div>
+
+
+
+              
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ================ LIBRERIAS JS ================== >
+
+    <!-- Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"> </script>
+    
+    <!-- JSs-->
+    <script type="text/javascript" src="js/app-start.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+   
+   
+
+  </body>
+</html> 
